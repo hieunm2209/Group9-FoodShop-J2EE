@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+ pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -10,8 +10,10 @@
 <body>
   	<jsp:include page="include/_header.jsp"></jsp:include>
     <jsp:include page="include/_menuCustomer.jsp"></jsp:include>
+    <br>
+    <a href = "${pageContext.request.contextPath}/Catalog"> GO BACK YOUR CART</a><br><br>
     
-    	   <table border="1" cellpadding="5" cellspacing="1" >
+    <table border="1" cellpadding="5" cellspacing="1" >
        <tr>
           <th>ID PRODUCT</th>
           <th>NAME PRODUCT</th>
@@ -27,8 +29,9 @@
              </td>
           </tr>
        </c:forEach>
-    </table>
-    <a href=""></a>
+    </table>.
+        <br>
+    <!-- <a href = "${pageContext.request.contextPath}"> GO BACK YOUR CART</a> -->
     <!-- cart -->
     <jsp:include page="include/_footer.jsp"></jsp:include>
 </body>

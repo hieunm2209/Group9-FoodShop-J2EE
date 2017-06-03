@@ -36,7 +36,7 @@ public class DoeditUserServlet extends HttpServlet{
 	      String phanquyen = (String) request.getParameter("m_phanquyenC");
 	      
 	      
-	      Taikhoan user = new Taikhoan(username,pass,sodt,gioitinh,diachi,phanquyen);
+	      Taikhoan user = new Taikhoan(username,gioitinh,pass,sodt,diachi,phanquyen);
 	 
 	      String errorString = null;
 	 

@@ -30,7 +30,7 @@ public class doRegisterServlet extends HttpServlet {
 		String sodt =  request.getParameter("Sodt");
 	    String diachi = request.getParameter("diachi");
 	    
-		String phanquyen ="";
+		String phanquyen ="customer";
 //		if(MyUtils.getLoginedUser(session).equals("admin"))
 //		phanquyen = "employee";
 //		else phanquyen = "customer";
@@ -45,7 +45,7 @@ public class doRegisterServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	    
-		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/homeView.jsp");
+		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/CustomerView.jsp");
 	      
 	      dispatcher.forward(request, response);
 	}

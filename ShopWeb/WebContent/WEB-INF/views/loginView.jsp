@@ -38,7 +38,7 @@
        </table>
     </form>
  
-    <p style="color:blue;">User Name: tom, password: tom001 or jerry/jerry001</p>
+    <p style="color:blue;">UserName/Password: admin/1 or employee/1 or cus/1</p>
  
     <jsp:include page="include/_footer.jsp"></jsp:include>
  

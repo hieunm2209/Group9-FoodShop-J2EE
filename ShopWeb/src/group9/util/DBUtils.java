@@ -195,12 +195,13 @@ public class DBUtils {
   
   
   public static void permisionArticle(Connection conn, String idNewC) throws SQLException {
-      String sql = "Update news set is_activeC = ? where idNewC= ? ";
+      String sql = "Update news set is_activeC = ?, date_updateC=? where idNewC= ? ";
  
       PreparedStatement pstm = conn.prepareStatement(sql);
 
       pstm.setBoolean(1, true);
-      pstm.setInt(2, Integer.parseInt(idNewC));
+      pstm.setDate(2, new java.sql.Date(System.currentTimeMillis()));
+      pstm.setInt(3, Integer.parseInt(idNewC));
       pstm.executeUpdate();
   }
   
